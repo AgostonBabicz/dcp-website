@@ -111,14 +111,14 @@
       <p style="margin-top: 0.5rem; max-width: 55ch;">Every transformation below is from a real client — busy professionals who followed the system and got real results.</p>
 
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="assets/images/image06.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery02/ea877425.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image10.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery03/ca880cd6.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image17.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery06/23aa0318.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery05/22a14dd8.jpg" alt="Client transformation"></div>
-        <div class="gallery-item gallery-item--wide"><img src="assets/images/image09.jpg" alt="Client transformation"></div>
+        <div class="gallery-item"><img src="assets/images/image06.jpg" alt="Client transformation" onclick="openLightbox(this.src, ['assets/images/image06.jpg','assets/images/gallery04/4009e10a.jpg','assets/images/gallery04/4c6282c0.jpg','assets/images/image21.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery02/ea877425.jpg" alt="Client transformation" onclick="openLightbox(this.src, ['assets/images/gallery02/ea877425.jpg','assets/images/gallery02/4f5a92b9.jpg','assets/images/gallery02/c287b1e8.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image10.jpg" alt="Client transformation" onclick="openLightbox(this.src, ['assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image16.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery03/ca880cd6.jpg" alt="Client transformation" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="assets/images/image17.jpg" alt="Client transformation" onclick="openLightbox(this.src, ['assets/images/image17.jpg','assets/images/image18.jpg','assets/images/image23.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery06/23aa0318.jpg" alt="Client transformation" onclick="openLightbox(this.src, ['assets/images/gallery06/23aa0318.jpg','assets/images/gallery06/d95dcc69.jpg','assets/images/gallery06/e724b915.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery05/22a14dd8.jpg" alt="Client transformation" onclick="openLightbox(this.src, ['assets/images/gallery05/22a14dd8.jpg','assets/images/gallery05/38c38ba1.jpg','assets/images/gallery05/396ebb95.jpg'])"></div>
+        <div class="gallery-item gallery-item--wide"><img src="assets/images/image12.jpg" alt="Transformation collage" onclick="openLightbox(this.src)"></div>
       </div>
     </div>
   </section>
@@ -153,6 +153,43 @@
       </div>
     </div>
   </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox__close" onclick="closeLightbox(event)">✕</button>
+    <button class="lightbox__nav lightbox__prev" onclick="prevLightbox(event)">&#8249;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="Photo" onclick="event.stopPropagation()">
+    <button class="lightbox__nav lightbox__next" onclick="nextLightbox(event)">&#8250;</button>
+  </div>
+
+  <script>
+    let lightboxImages = [];
+    let lightboxIndex = 0;
+    function openLightbox(src, group) {
+      const lb = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      lightboxImages = group || [src];
+      lightboxIndex = lightboxImages.indexOf(src);
+      if (lightboxIndex < 0) lightboxIndex = 0;
+      img.src = src;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox(e) {
+      if (e) e.stopPropagation();
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function prevLightbox(e) { e.stopPropagation(); lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length; document.getElementById('lightbox-img').src = lightboxImages[lightboxIndex]; }
+    function nextLightbox(e) { e.stopPropagation(); lightboxIndex = (lightboxIndex + 1) % lightboxImages.length; document.getElementById('lightbox-img').src = lightboxImages[lightboxIndex]; }
+    document.addEventListener('keydown', e => {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prevLightbox(e);
+      if (e.key === 'ArrowRight') nextLightbox(e);
+    });
+  </script>
 
   <!-- Footer -->
   <footer class="footer">

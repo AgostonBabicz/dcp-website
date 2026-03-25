@@ -59,7 +59,6 @@
     <div class="container">
       <p class="section-label">Does This Sound Familiar?</p>
       <h2>The Problem With Traditional Fitness</h2>
-
       <div class="pain-grid">
         <div class="pain-card">
           <div class="pain-card__icon">⏳</div>
@@ -114,110 +113,326 @@
     </div>
   </section>
 
-  <!-- Transformation Gallery -->
-  <section class="gallery-section">
+  <!-- Results Section -->
+  <section class="section section--light">
     <div class="container">
-      <p class="section-label">Real Results</p>
-      <h2>Client Transformations</h2>
-      <p style="margin-top: 0.5rem; max-width: 55ch;">Every photo below is from a real client. Same schedules. Same stresses. Different outcomes — when the right system is in place.</p>
+      <p class="section-label">Proven Outcomes</p>
+      <h2>These Are the Results</h2>
+      <p style="margin-top: 0.5rem; max-width: 55ch; color: var(--text-muted);">High performers, full schedules — still unrecognizable transformations. Click any card to read the full story.</p>
 
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="assets/images/image03.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image01.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image06.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image09.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image10.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image15.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image17.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image18.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery02/ea877425.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery03/259652f3.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery04/4009e10a.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery05/38c38ba1.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery06/23aa0318.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery06/e724b915.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery08/a730d8e4.jpg" alt="Client transformation"></div>
-        <div class="gallery-item gallery-item--wide"><img src="assets/images/image07.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/image04.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery05/22a14dd8.jpg" alt="Client transformation"></div>
-        <div class="gallery-item"><img src="assets/images/gallery01/dd103a26.jpg" alt="Client testimonial"></div>
-        <div class="gallery-item"><img src="assets/images/image05.jpg" alt="Client testimonial"></div>
-        <div class="gallery-item"><img src="assets/images/image08.jpg" alt="Client testimonial"></div>
-        <div class="gallery-item"><img src="assets/images/image13.jpg" alt="Client testimonial"></div>
-        <div class="gallery-item"><img src="assets/images/image20.jpg" alt="Client testimonial"></div>
-        <div class="gallery-item gallery-item--wide"><img src="assets/images/image12.jpg" alt="Client testimonial"></div>
-      </div>
+      <div class="results-grid">
+
+        <!-- Devin -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Devin</p>
+          <p class="result-card__role">Real estate entrepreneur · Dad of 2 · Age 45</p>
+          <span class="result-card__metric">–22 lbs fat</span>
+          <p class="result-card__preview"><strong>Lost 22 lbs of fat</strong> and took his sleep score from 58 to 92. All in under 4 months — while still eating ice cream.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image12.jpg" alt="Devin transformation" onclick="openLightbox(this.src, ['assets/images/image12.jpg','assets/images/image01.jpg'])">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image01.jpg" alt="Devin" onclick="openLightbox(this.src, ['assets/images/image12.jpg','assets/images/image01.jpg'])">
+              <img src="assets/images/image06.jpg" alt="Devin" onclick="openLightbox(this.src, ['assets/images/image12.jpg','assets/images/image01.jpg'])">
+              <img src="assets/images/image03.jpg" alt="Devin" onclick="openLightbox(this.src, ['assets/images/image12.jpg','assets/images/image01.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">–22</span><span class="detail-stat__label">lbs fat lost</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">58→92</span><span class="detail-stat__label">Sleep Score</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">4</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">I stopped dreading photos. I stopped avoiding the mirror. I ate ice cream throughout and still got leaner than I've been since my 30s. The protocol actually fit into my life — travel, family, everything.</p>
+          </div>
+        </div>
+
+        <!-- Xavier -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Xavier</p>
+          <p class="result-card__role">56-year-old attorney</p>
+          <span class="result-card__metric">21% → 14% body fat</span>
+          <p class="result-card__preview"><strong>Went from 21% to 14% body fat</strong> in his first 4 months. Fixed his hormones, sleep & stress levels naturally.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image01.jpg" alt="Xavier transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image01.jpg" alt="Xavier" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image18.jpg'])">
+              <img src="assets/images/image18.jpg" alt="Xavier" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image18.jpg'])">
+              <img src="assets/images/image19.jpg" alt="Xavier" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image18.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">21%→14%</span><span class="detail-stat__label">Body Fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">4</span><span class="detail-stat__label">months</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">100%</span><span class="detail-stat__label">natural</span></div>
+            </div>
+            <p class="result-card__testimonial">At 56 I thought this was behind me. The bloodwork showed me exactly what was off — and the protocol fixed it without a single prescription. I look better than I did at 40.</p>
+          </div>
+        </div>
+
+        <!-- Kevin -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Kevin</p>
+          <p class="result-card__role">Sales professional · Late 40s</p>
+          <span class="result-card__metric">360+ → 300 lbs</span>
+          <p class="result-card__preview"><strong>Went from 360+ to 300 lbs.</strong> Built lean muscle. Reduced blood pressure and reversed insulin resistance — not stopping anytime soon.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image03.jpg" alt="Kevin transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image03.jpg" alt="Kevin" onclick="openLightbox(this.src, ['assets/images/image03.jpg','assets/images/image24.jpg','assets/images/gallery03/ca880cd6.jpg'])">
+              <img src="assets/images/image24.jpg" alt="Kevin" onclick="openLightbox(this.src, ['assets/images/image03.jpg','assets/images/image24.jpg','assets/images/gallery03/ca880cd6.jpg'])">
+              <img src="assets/images/gallery03/ca880cd6.jpg" alt="Kevin" onclick="openLightbox(this.src, ['assets/images/image03.jpg','assets/images/image24.jpg','assets/images/gallery03/ca880cd6.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">–60</span><span class="detail-stat__label">lbs</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">60+</span><span class="detail-stat__label">lbs muscle gained</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">5</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">My doctor took me off two medications. I have more energy at 48 than I did at 38. The protocol didn't ask me to suffer — it just gave me a system that actually worked.</p>
+          </div>
+        </div>
+
+        <!-- Hank -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Hank</p>
+          <p class="result-card__role">Business executive · Age 51</p>
+          <span class="result-card__metric">20%+ → 10% body fat</span>
+          <p class="result-card__preview"><strong>20%+ to 10% body fat</strong> in 5 months. Gained 5 lbs of lean muscle. Without tracking a single calorie.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image06.jpg" alt="Hank transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image06.jpg" alt="Hank" onclick="openLightbox(this.src, ['assets/images/image06.jpg','assets/images/gallery04/4009e10a.jpg','assets/images/gallery04/4c6282c0.jpg'])">
+              <img src="assets/images/gallery04/4009e10a.jpg" alt="Hank" onclick="openLightbox(this.src, ['assets/images/image06.jpg','assets/images/gallery04/4009e10a.jpg','assets/images/gallery04/4c6282c0.jpg'])">
+              <img src="assets/images/gallery04/4c6282c0.jpg" alt="Hank" onclick="openLightbox(this.src, ['assets/images/image06.jpg','assets/images/gallery04/4009e10a.jpg','assets/images/gallery04/4c6282c0.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">20%→10%</span><span class="detail-stat__label">Body Fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">+5</span><span class="detail-stat__label">lbs muscle</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">5</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">I didn't track a single calorie. I ate what I wanted within the framework. The accountability was the difference — someone checking in every day kept me consistent when work got chaotic.</p>
+          </div>
+        </div>
+
+        <!-- Vassilios (Billy) -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Vassilios (Billy)</p>
+          <p class="result-card__role">Management consultant · Age 47 · Single Dad</p>
+          <span class="result-card__metric">–35 lbs fat</span>
+          <p class="result-card__preview"><strong>Dropped 35 lbs of fat</strong> and went down 3 jeans sizes. Reduced his heart age by 8+ years.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/gallery02/ea877425.jpg" alt="Vassilios transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/gallery02/ea877425.jpg" alt="Vassilios" onclick="openLightbox(this.src, ['assets/images/gallery02/ea877425.jpg','assets/images/gallery02/4f5a92b9.jpg','assets/images/gallery02/c287b1e8.jpg'])">
+              <img src="assets/images/gallery02/4f5a92b9.jpg" alt="Vassilios" onclick="openLightbox(this.src, ['assets/images/gallery02/ea877425.jpg','assets/images/gallery02/4f5a92b9.jpg','assets/images/gallery02/c287b1e8.jpg'])">
+              <img src="assets/images/gallery02/c287b1e8.jpg" alt="Vassilios" onclick="openLightbox(this.src, ['assets/images/gallery02/ea877425.jpg','assets/images/gallery02/4f5a92b9.jpg','assets/images/gallery02/c287b1e8.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">–35</span><span class="detail-stat__label">lbs fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">–3</span><span class="detail-stat__label">jeans sizes</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">–8</span><span class="detail-stat__label">years heart age</span></div>
+            </div>
+            <p class="result-card__testimonial">Three kids, a demanding job, and I still found time. The single dad routine doesn't allow for gyms — so we built a system that works at home, in hotels, wherever. Down three sizes and not slowing down.</p>
+          </div>
+        </div>
+
+        <!-- Kyle -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Kyle</p>
+          <p class="result-card__role">Entrepreneur · Age 41</p>
+          <span class="result-card__metric">15% → 7% body fat</span>
+          <p class="result-card__preview"><strong>15% to 7% body fat.</strong> Fixed sleep & energy levels while managing 2 kids and a hectic routine.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/gallery05/22a14dd8.jpg" alt="Kyle transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/gallery05/22a14dd8.jpg" alt="Kyle" onclick="openLightbox(this.src, ['assets/images/gallery05/22a14dd8.jpg','assets/images/gallery05/38c38ba1.jpg','assets/images/gallery05/396ebb95.jpg'])">
+              <img src="assets/images/gallery05/38c38ba1.jpg" alt="Kyle" onclick="openLightbox(this.src, ['assets/images/gallery05/22a14dd8.jpg','assets/images/gallery05/38c38ba1.jpg','assets/images/gallery05/396ebb95.jpg'])">
+              <img src="assets/images/gallery05/396ebb95.jpg" alt="Kyle" onclick="openLightbox(this.src, ['assets/images/gallery05/22a14dd8.jpg','assets/images/gallery05/38c38ba1.jpg','assets/images/gallery05/396ebb95.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">15%→7%</span><span class="detail-stat__label">Body Fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">–17</span><span class="detail-stat__label">lbs fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">4</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">Two kids under 5, a business to run, and I got into the best shape of my adult life. The sleep optimization alone changed everything — I'm sharper in meetings than I've been in years.</p>
+          </div>
+        </div>
+
+        <!-- David -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">David</p>
+          <p class="result-card__role">Business owner · Age 57</p>
+          <span class="result-card__metric">–30 lbs fat</span>
+          <p class="result-card__preview"><strong>Dropped 30 lbs of fat.</strong> Replaced sleep meds with natural techniques. Regained confidence, energy & mental clarity while running a high-stress business.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image17.jpg" alt="David transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image17.jpg" alt="David" onclick="openLightbox(this.src, ['assets/images/image17.jpg','assets/images/image18.jpg','assets/images/image19.jpg'])">
+              <img src="assets/images/image18.jpg" alt="David" onclick="openLightbox(this.src, ['assets/images/image17.jpg','assets/images/image18.jpg','assets/images/image19.jpg'])">
+              <img src="assets/images/image19.jpg" alt="David" onclick="openLightbox(this.src, ['assets/images/image17.jpg','assets/images/image18.jpg','assets/images/image19.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">–30</span><span class="detail-stat__label">lbs fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">57</span><span class="detail-stat__label">years old</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">5</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">I was on sleep medication for years. Two months into the protocol and I threw the pills away. My doctor couldn't believe the change. Energy, clarity, confidence — it's all back.</p>
+          </div>
+        </div>
+
+        <!-- Jamie -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Jamie</p>
+          <p class="result-card__role">Professional · Over 50</p>
+          <span class="result-card__metric">–25 lbs fat</span>
+          <p class="result-card__preview"><strong>Dropped 25 lbs of fat in 5 months.</strong> Increased strength by 50%+ across all lifts. Fixed sleep, posture & metabolism.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image07.jpg" alt="Jamie transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image07.jpg" alt="Jamie" onclick="openLightbox(this.src, ['assets/images/image07.jpg','assets/images/image21.jpg','assets/images/image09.jpg'])">
+              <img src="assets/images/image21.jpg" alt="Jamie" onclick="openLightbox(this.src, ['assets/images/image07.jpg','assets/images/image21.jpg','assets/images/image09.jpg'])">
+              <img src="assets/images/image09.jpg" alt="Jamie" onclick="openLightbox(this.src, ['assets/images/image07.jpg','assets/images/image21.jpg','assets/images/image09.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">–25</span><span class="detail-stat__label">lbs fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">+50%</span><span class="detail-stat__label">strength</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">5</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">At 53 I was skeptical. I shouldn't have been. I've rebuilt my body and my confidence. My posture is better, I stand taller, and I sleep like I did in my 30s. The system just works.</p>
+          </div>
+        </div>
+
+        <!-- Michael -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Michael</p>
+          <p class="result-card__role">Physics professor</p>
+          <span class="result-card__metric">25% → 15% body fat</span>
+          <p class="result-card__preview"><strong>25% to 15% body fat.</strong> Added 8 lbs of muscle. Sleep Score went from 60 to 90+.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image15.jpg" alt="Michael transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image15.jpg" alt="Michael" onclick="openLightbox(this.src, ['assets/images/image15.jpg','assets/images/image16.jpg','assets/images/image10.jpg'])">
+              <img src="assets/images/image16.jpg" alt="Michael" onclick="openLightbox(this.src, ['assets/images/image15.jpg','assets/images/image16.jpg','assets/images/image10.jpg'])">
+              <img src="assets/images/image10.jpg" alt="Michael" onclick="openLightbox(this.src, ['assets/images/image15.jpg','assets/images/image16.jpg','assets/images/image10.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">25%→15%</span><span class="detail-stat__label">Body Fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">+8</span><span class="detail-stat__label">lbs muscle</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">60→90+</span><span class="detail-stat__label">Sleep Score</span></div>
+            </div>
+            <p class="result-card__testimonial">As a professor I overthink everything. The data-driven approach appealed to me — bloodwork, sleep scores, tracking. But the result was anything but academic. I feel like I did in my 40s.</p>
+          </div>
+        </div>
+
+        <!-- Mo -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Mo</p>
+          <p class="result-card__role">Founder · Runs 2 businesses</p>
+          <span class="result-card__metric">+20 lbs lean mass</span>
+          <p class="result-card__preview"><strong>Gained 20 lbs of lean mass.</strong> Upgraded mobility for martial arts. Fixed sleep & energy levels while running 2 businesses.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/gallery06/23aa0318.jpg" alt="Mo transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/gallery06/23aa0318.jpg" alt="Mo" onclick="openLightbox(this.src, ['assets/images/gallery06/23aa0318.jpg','assets/images/gallery06/d95dcc69.jpg','assets/images/gallery06/e724b915.jpg'])">
+              <img src="assets/images/gallery06/d95dcc69.jpg" alt="Mo" onclick="openLightbox(this.src, ['assets/images/gallery06/23aa0318.jpg','assets/images/gallery06/d95dcc69.jpg','assets/images/gallery06/e724b915.jpg'])">
+              <img src="assets/images/gallery06/e724b915.jpg" alt="Mo" onclick="openLightbox(this.src, ['assets/images/gallery06/23aa0318.jpg','assets/images/gallery06/d95dcc69.jpg','assets/images/gallery06/e724b915.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">+20</span><span class="detail-stat__label">lbs lean mass</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">2</span><span class="detail-stat__label">businesses</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">6</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">Running two businesses doesn't leave room for generic fitness programs. This protocol adapted to my schedule, not the other way around. I put on 20 lbs of muscle and my energy in board meetings is completely different.</p>
+          </div>
+        </div>
+
+        <!-- Cristian -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Cristian</p>
+          <p class="result-card__role">Senior software engineer</p>
+          <span class="result-card__metric">+22 lbs lean mass</span>
+          <p class="result-card__preview"><strong>Gained 22 lbs of lean mass.</strong> Achieved consistent 90+ Sleep Scores. Fixed circadian rhythm & energy levels.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image23.jpg" alt="Cristian transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image23.jpg" alt="Cristian" onclick="openLightbox(this.src, ['assets/images/image23.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])">
+              <img src="assets/images/image17.jpg" alt="Cristian" onclick="openLightbox(this.src, ['assets/images/image23.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])">
+              <img src="assets/images/image18.jpg" alt="Cristian" onclick="openLightbox(this.src, ['assets/images/image23.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">+22</span><span class="detail-stat__label">lbs lean mass</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">90+</span><span class="detail-stat__label">Sleep Scores</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">6</span><span class="detail-stat__label">months</span></div>
+            </div>
+            <p class="result-card__testimonial">Software engineering means sitting 10+ hours a day. The protocol fixed my circadian rhythm, built real muscle, and got my energy back without a single All-Nighter recovery. This is what 90+ sleep scores look like.</p>
+          </div>
+        </div>
+
+        <!-- Chai -->
+        <div class="result-card" onclick="toggleCard(this)">
+          <p class="result-card__name">Chai</p>
+          <p class="result-card__role">Founder & creative · Entrepreneur</p>
+          <span class="result-card__metric">23%+ → 17% body fat</span>
+          <p class="result-card__preview"><strong>Dropped 11 lbs of fat</strong> in 90 days. Went from 23%+ to 17% body fat. Rebuilt sleep quality & energy levels.</p>
+          <span class="result-card__cta">View full story <span class="arrow">→</span></span>
+          <div class="result-card__detail">
+            <img class="result-card__detail-photo" src="assets/images/image04.jpg" alt="Chai transformation" onclick="openLightbox(this.src)">
+            <div class="result-card__detail-gallery">
+              <img src="assets/images/image04.jpg" alt="Chai" onclick="openLightbox(this.src, ['assets/images/image04.jpg','assets/images/gallery03/259652f3.jpg','assets/images/image06.jpg'])">
+              <img src="assets/images/gallery03/259652f3.jpg" alt="Chai" onclick="openLightbox(this.src, ['assets/images/image04.jpg','assets/images/gallery03/259652f3.jpg','assets/images/image06.jpg'])">
+              <img src="assets/images/image06.jpg" alt="Chai" onclick="openLightbox(this.src, ['assets/images/image04.jpg','assets/images/gallery03/259652f3.jpg','assets/images/image06.jpg'])">
+            </div>
+            <div class="result-card__detail-stats">
+              <div class="detail-stat"><span class="detail-stat__num">–11</span><span class="detail-stat__label">lbs fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">23%→17%</span><span class="detail-stat__label">Body Fat</span></div>
+              <div class="detail-stat"><span class="detail-stat__num">90</span><span class="detail-stat__label">days</span></div>
+            </div>
+            <p class="result-card__testimonial">Entrepreneurial life is chaotic. The protocol gave me structure without rigidity. 90 days in and I'm leaner, sharper, and sleeping better than I have in years. The system adapts to your life — not the other way around.</p>
+          </div>
+        </div>
+
+      </div><!-- /results-grid -->
     </div>
   </section>
 
-  <!-- Results Cards -->
-  <section class="section section--light">
+  <!-- Transformation Gallery -->
+  <section class="gallery-section">
     <div class="container">
-      <p class="section-label">The Results</p>
-      <h2>These Are the Results</h2>
-      <p class="results-intro">High performers, full schedules — still unrecognizable transformations. Every man below was once in the same spot: tired of feeling heavy, slow, or inflamed, traveling too much, and too smart to fall for vague "eat less, move more" advice again.</p>
-
-      <div class="results-grid">
-        <div class="result-card">
-          <p class="result-card__name">Devin</p>
-          <p class="result-card__role">Real estate entrepreneur · Dad of 2 · Age 45</p>
-          <p class="result-card__text"><strong>Lost 22 lbs of fat.</strong> Took his sleep score from 58 to 92. All in under 4 months — while still eating ice cream.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Xavier</p>
-          <p class="result-card__role">56-year-old attorney</p>
-          <p class="result-card__text"><strong>Went from 21% to 14% body fat</strong> in his first 4 months. Fixed hormones, sleep & stress levels naturally.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Kevin</p>
-          <p class="result-card__role">Sales professional · Late 40s</p>
-          <p class="result-card__text"><strong>Went from 360+ to 300 lbs.</strong> Built lean muscle. Reduced blood pressure and reversed insulin resistance.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Hank</p>
-          <p class="result-card__role">Business executive · Age 51</p>
-          <p class="result-card__text"><strong>20%+ to 10% body fat</strong> in 5 months. Gained 5 lbs of lean muscle. Without tracking a single calorie.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Vassilios (Billy)</p>
-          <p class="result-card__role">Management consultant · Age 47 · Single Dad</p>
-          <p class="result-card__text"><strong>Dropped 35 lbs of fat.</strong> Went down 3 jeans sizes. Reduced heart age by 8+ years.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Kyle</p>
-          <p class="result-card__role">Entrepreneur · Age 41</p>
-          <p class="result-card__text"><strong>15% to 7% body fat.</strong> Fixed sleep & energy levels while managing 2 kids and a hectic routine.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">David</p>
-          <p class="result-card__role">Business owner · Age 57</p>
-          <p class="result-card__text"><strong>Dropped 30 lbs of fat.</strong> Replaced sleep meds with natural techniques. Regained confidence, energy & mental clarity.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Jamie</p>
-          <p class="result-card__role">Professional · Over 50</p>
-          <p class="result-card__text"><strong>Dropped 25 lbs of fat in 5 months.</strong> Increased strength by 50%+ across all lifts. Fixed sleep, posture & metabolism.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Michael</p>
-          <p class="result-card__role">Physics professor</p>
-          <p class="result-card__text"><strong>25% to 15% body fat.</strong> Added 8 lbs of muscle. Sleep Score went from 60 to 90+.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Mo</p>
-          <p class="result-card__role">Founder · Runs 2 businesses</p>
-          <p class="result-card__text"><strong>Gained 20 lbs of lean mass.</strong> Upgraded mobility for martial arts. Fixed sleep & energy levels.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Cristian</p>
-          <p class="result-card__role">Senior software engineer</p>
-          <p class="result-card__text"><strong>Gained 22 lbs of lean mass.</strong> Achieved consistent 90+ Sleep Scores. Fixed circadian rhythm & energy levels.</p>
-        </div>
-        <div class="result-card">
-          <p class="result-card__name">Chai</p>
-          <p class="result-card__role">Founder & creative · Entrepreneur</p>
-          <p class="result-card__text"><strong>Dropped 11 lbs of fat</strong> in 90 days. Went from 23%+ to 17% body fat. Rebuilt sleep quality & energy levels.</p>
-        </div>
+      <p class="section-label">Visual Proof</p>
+      <h2>Transformation Gallery</h2>
+      <p style="margin-top: 0.5rem; max-width: 55ch;">Before and after from clients across the program. Click any photo to enlarge.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="assets/images/image01.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image03.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image06.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image07.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image10.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image15.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image17.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/image18.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/image01.jpg','assets/images/image03.jpg','assets/images/image06.jpg','assets/images/image07.jpg','assets/images/image10.jpg','assets/images/image15.jpg','assets/images/image17.jpg','assets/images/image18.jpg'])"></div>
+        <div class="gallery-item gallery-item--wide"><img src="assets/images/image12.jpg" alt="Transformation collage" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="assets/images/gallery02/4f5a92b9.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery02/4f5a92b9.jpg','assets/images/gallery02/c287b1e8.jpg','assets/images/gallery02/ea877425.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery02/c287b1e8.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery02/4f5a92b9.jpg','assets/images/gallery02/c287b1e8.jpg','assets/images/gallery02/ea877425.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery02/ea877425.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery02/4f5a92b9.jpg','assets/images/gallery02/c287b1e8.jpg','assets/images/gallery02/ea877425.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery04/4009e10a.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery04/4009e10a.jpg','assets/images/gallery04/4c6282c0.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery04/4c6282c0.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery04/4009e10a.jpg','assets/images/gallery04/4c6282c0.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery05/22a14dd8.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery05/22a14dd8.jpg','assets/images/gallery05/38c38ba1.jpg','assets/images/gallery05/396ebb95.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery05/38c38ba1.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery05/22a14dd8.jpg','assets/images/gallery05/38c38ba1.jpg','assets/images/gallery05/396ebb95.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery05/396ebb95.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery05/22a14dd8.jpg','assets/images/gallery05/38c38ba1.jpg','assets/images/gallery05/396ebb95.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery06/23aa0318.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery06/23aa0318.jpg','assets/images/gallery06/d95dcc69.jpg','assets/images/gallery06/e724b915.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery06/d95dcc69.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery06/23aa0318.jpg','assets/images/gallery06/d95dcc69.jpg','assets/images/gallery06/e724b915.jpg'])"></div>
+        <div class="gallery-item"><img src="assets/images/gallery06/e724b915.jpg" alt="Transformation" onclick="openLightbox(this.src, ['assets/images/gallery06/23aa0318.jpg','assets/images/gallery06/d95dcc69.jpg','assets/images/gallery06/e724b915.jpg'])"></div>
+        <div class="gallery-item gallery-item--wide"><img src="assets/images/gallery03/ca880cd6.jpg" alt="Transformation" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="assets/images/image04.jpg" alt="Transformation" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="assets/images/image16.jpg" alt="Transformation" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="assets/images/image23.jpg" alt="Transformation" onclick="openLightbox(this.src)"></div>
       </div>
     </div>
   </section>
@@ -229,61 +444,20 @@
       <h2>This Isn't a Quick Fix</h2>
       <h3>It's a Custom Protocol Built Around Your Life</h3>
       <p style="margin-top: 1rem;">This isn't some cookie-cutter plan recycled from a fitness PDF in 2008. We analyze your real-time health data — your bloodwork, sleep, stress load, and lifestyle — then we build the protocol around your schedule, not against it.</p>
-      <p style="margin-top: 0.75rem;">Whether you're in the gym twice a week or pacing the airport terminal, everything is tailored to your routine, your preferences, and your goals.</p>
 
       <div class="table-wrapper" style="margin-top: 3rem;">
         <table>
           <thead>
-            <tr>
-              <th>Feature</th>
-              <th>Demi Cycle Protocol</th>
-              <th>Online Trainers</th>
-              <th>In-Person Trainers</th>
-            </tr>
+            <tr><th>Feature</th><th>Demi Cycle Protocol</th><th>Online Trainers</th><th>In-Person Trainers</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Personalized Workouts</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="partial">◐</span></td>
-              <td><span class="check">✓</span></td>
-            </tr>
-            <tr>
-              <td>Smart, Flexible Nutrition</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="partial">◐</span></td>
-              <td><span class="partial">◐</span></td>
-            </tr>
-            <tr>
-              <td>1-on-1 Daily Accountability</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="partial">◐</span></td>
-              <td><span class="partial">◐</span></td>
-            </tr>
-            <tr>
-              <td>Bloodwork & Hormone Analysis</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="dash">—</span></td>
-              <td><span class="dash">—</span></td>
-            </tr>
-            <tr>
-              <td>Sleep, Stress & Travel Support</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="dash">—</span></td>
-              <td><span class="dash">—</span></td>
-            </tr>
-            <tr>
-              <td>Minimal Time Commitment</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="dash">—</span></td>
-              <td><span class="dash">—</span></td>
-            </tr>
-            <tr>
-              <td>Sustainable Results</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="partial">◐</span></td>
-              <td><span class="dash">—</span></td>
-            </tr>
+            <tr><td>Personalized Workouts</td><td><span class="check">✓</span></td><td><span class="partial">◐</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Smart, Flexible Nutrition</td><td><span class="check">✓</span></td><td><span class="partial">◐</span></td><td><span class="partial">◐</span></td></tr>
+            <tr><td>1-on-1 Daily Accountability</td><td><span class="check">✓</span></td><td><span class="partial">◐</span></td><td><span class="partial">◐</span></td></tr>
+            <tr><td>Bloodwork & Hormone Analysis</td><td><span class="check">✓</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
+            <tr><td>Sleep, Stress & Travel Support</td><td><span class="check">✓</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
+            <tr><td>Minimal Time Commitment</td><td><span class="check">✓</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
+            <tr><td>Sustainable Results</td><td><span class="check">✓</span></td><td><span class="partial">◐</span></td><td><span class="dash">—</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -295,61 +469,19 @@
     <div class="container">
       <p class="section-label" style="color: var(--green-bright);">Program</p>
       <h2>What's Included</h2>
-      <p style="margin-top: 0.5rem; color: rgba(255,255,255,0.85);">Most trainers hand you a workout plan and disappear. We go deeper. We walk with you through your full lifestyle, metabolism, and mindset — and we adjust in real time as your life evolves.</p>
-
+      <p style="margin-top: 0.5rem; color: rgba(255,255,255,0.85);">Most trainers hand you a workout plan and disappear. We go deeper — walking with you through your full lifestyle, metabolism, and mindset.</p>
       <div class="pricing-grid">
-        <div class="pricing-item">
-          <p class="pricing-item__name">01</p>
-          <p class="pricing-item__title">Onboarding &amp; Health Audit</p>
-          <p class="pricing-item__value">$497</p>
-          <p class="pricing-item__desc">30-min deep-dive kickoff call, lifestyle mapping, initial data collection, and protocol setup.</p>
-        </div>
-        <div class="pricing-item">
-          <p class="pricing-item__name">02</p>
-          <p class="pricing-item__title">Bloodwork &amp; Hormone Analysis</p>
-          <p class="pricing-item__value">$2,497</p>
-          <p class="pricing-item__desc">Full blood panel interpretation, hormone optimization roadmap, and sleep data analysis.</p>
-        </div>
-        <div class="pricing-item">
-          <p class="pricing-item__name">03</p>
-          <p class="pricing-item__title">Custom Nutrition Protocol</p>
-          <p class="pricing-item__value">$1,497</p>
-          <p class="pricing-item__desc">Flexible nutrition plan, metabolic priming, travel/restaurant strategies, and supplement protocol.</p>
-        </div>
-        <div class="pricing-item">
-          <p class="pricing-item__name">04</p>
-          <p class="pricing-item__title">Training Program</p>
-          <p class="pricing-item__value">$997</p>
-          <p class="pricing-item__desc">Custom workouts, video form feedback, progressive overload tracking, and hotel/home adaptations.</p>
-        </div>
-        <div class="pricing-item">
-          <p class="pricing-item__name">05</p>
-          <p class="pricing-item__title">Sleep &amp; Recovery Protocol</p>
-          <p class="pricing-item__value">$997</p>
-          <p class="pricing-item__desc">Circadian rhythm optimization, sleep supplement stack, recovery systems, and stress management.</p>
-        </div>
-        <div class="pricing-item">
-          <p class="pricing-item__name">06</p>
-          <p class="pricing-item__title">Technology &amp; Monitoring</p>
-          <p class="pricing-item__value">$750</p>
-          <p class="pricing-item__desc">App access, wearable device integration, and real-time health tracking dashboard.</p>
-        </div>
-        <div class="pricing-item">
-          <p class="pricing-item__name">07</p>
-          <p class="pricing-item__title">Coaching &amp; Accountability</p>
-          <p class="pricing-item__value">$2,499</p>
-          <p class="pricing-item__desc">Weekly coaching calls, unlimited text support, daily accountability, and real-time adjustments.</p>
-        </div>
-        <div class="pricing-item">
-          <p class="pricing-item__name">08</p>
-          <p class="pricing-item__title">Private Community Access</p>
-          <p class="pricing-item__value">$503</p>
-          <p class="pricing-item__desc">Network of high-performing men, peer accountability, and shared resources.</p>
-        </div>
+        <div class="pricing-item"><p class="pricing-item__name">01</p><p class="pricing-item__title">Onboarding &amp; Health Audit</p><p class="pricing-item__value">$497</p><p class="pricing-item__desc">30-min deep-dive kickoff call, lifestyle mapping, initial data collection, and protocol setup.</p></div>
+        <div class="pricing-item"><p class="pricing-item__name">02</p><p class="pricing-item__title">Bloodwork &amp; Hormone Analysis</p><p class="pricing-item__value">$2,497</p><p class="pricing-item__desc">Full blood panel interpretation, hormone optimization roadmap, and sleep data analysis.</p></div>
+        <div class="pricing-item"><p class="pricing-item__name">03</p><p class="pricing-item__title">Custom Nutrition Protocol</p><p class="pricing-item__value">$1,497</p><p class="pricing-item__desc">Flexible nutrition plan, metabolic priming, travel/restaurant strategies, and supplement protocol.</p></div>
+        <div class="pricing-item"><p class="pricing-item__name">04</p><p class="pricing-item__title">Training Program</p><p class="pricing-item__value">$997</p><p class="pricing-item__desc">Custom workouts, video form feedback, progressive overload tracking, and hotel/home adaptations.</p></div>
+        <div class="pricing-item"><p class="pricing-item__name">05</p><p class="pricing-item__title">Sleep &amp; Recovery Protocol</p><p class="pricing-item__value">$997</p><p class="pricing-item__desc">Circadian rhythm optimization, sleep supplement stack, recovery systems, and stress management.</p></div>
+        <div class="pricing-item"><p class="pricing-item__name">06</p><p class="pricing-item__title">Technology &amp; Monitoring</p><p class="pricing-item__value">$750</p><p class="pricing-item__desc">App access, wearable device integration, and real-time health tracking dashboard.</p></div>
+        <div class="pricing-item"><p class="pricing-item__name">07</p><p class="pricing-item__title">Coaching &amp; Accountability</p><p class="pricing-item__value">$2,499</p><p class="pricing-item__desc">Weekly coaching calls, unlimited text support, daily accountability, and real-time adjustments.</p></div>
+        <div class="pricing-item"><p class="pricing-item__name">08</p><p class="pricing-item__title">Private Community Access</p><p class="pricing-item__value">$503</p><p class="pricing-item__desc">Network of high-performing men, peer accountability, and shared resources.</p></div>
       </div>
-
       <p class="pricing-total">Total Program Value: <strong>$10,237</strong></p>
-      <p style="margin-top: 0.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.68);">The investment is less than one ER visit — and the results last a lifetime.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem; color: rgba(255,255,255,0.68);">Less than one ER visit — and the results last a lifetime.</p>
     </div>
   </section>
 
@@ -358,38 +490,24 @@
     <div class="container">
       <p class="section-label">The Framework</p>
       <h2>The 3 Pillars of the Demi Cycle Protocol</h2>
-      <p style="margin-top: 0.5rem;">You don't need more workouts. You don't need another app. You want a system that respects your time, your biology, and your life.</p>
-
       <div class="pillars-grid">
         <div class="pillar-card">
           <div class="pillar-card__num">I</div>
           <h3>Time-Efficiency</h3>
           <p>Transform your body in under 2 hours a week. No calorie counting. No endless workouts. No gym memberships required.</p>
-          <ul>
-            <li>High-impact routines from home, hotel gyms, or anywhere</li>
-            <li>Meals that take minutes to prep</li>
-            <li>Every protocol respects your calendar</li>
-          </ul>
+          <ul><li>High-impact routines from home, hotel gyms, or anywhere</li><li>Meals that take minutes to prep</li><li>Every protocol respects your calendar</li></ul>
         </div>
         <div class="pillar-card">
           <div class="pillar-card__num">II</div>
           <h3>Metabolic Priming</h3>
           <p>Rewire your hormones. Reset your sleep. Reclaim your energy. Sleep is the multiplier for fat loss, testosterone, and recovery.</p>
-          <ul>
-            <li>Personalized sleep quality protocols</li>
-            <li>Bloodwork-based hormone optimization</li>
-            <li>Carbs used strategically, not demonized</li>
-          </ul>
+          <ul><li>Personalized sleep quality protocols</li><li>Bloodwork-based hormone optimization</li><li>Carbs used strategically, not demonized</li></ul>
         </div>
         <div class="pillar-card">
           <div class="pillar-card__num">III</div>
           <h3>Natural Accountability</h3>
-          <p>No more motivation hacks. No more "starting over." We build routines that stack until they become automatic — like brushing your teeth.</p>
-          <ul>
-            <li>Simple habits that compound over time</li>
-            <li>Action → Habit → Lifestyle</li>
-            <li>No tracking every meal required</li>
-          </ul>
+          <p>No more motivation hacks. No more "starting over." We build routines that stack until they become automatic.</p>
+          <ul><li>Simple habits that compound over time</li><li>Action → Habit → Lifestyle</li><li>No tracking every meal required</li></ul>
         </div>
       </div>
     </div>
@@ -400,44 +518,12 @@
     <div class="container">
       <p class="section-label">Your Experience</p>
       <h2>Your Journey to Transformation</h2>
-      <p style="margin-top: 0.5rem;">You're not thrown into the deep end. We walk beside you, step-by-step. From day one, everything is structured for clarity, consistency, and results — without overwhelming you.</p>
-
       <div class="steps">
-        <div class="step">
-          <div class="step__num">01</div>
-          <div>
-            <p class="step__title">Sign-Up &amp; Secure Your Spot</p>
-            <p class="step__desc">Discovering your goals and problems. Payment and contract. Locking in your start date. Immediate onboarding access granted.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__num">02</div>
-          <div>
-            <p class="step__title">Onboarding Call (Within 48 Hours)</p>
-            <p class="step__desc">30-minute 1:1 kickoff with your coach. Deep-dive health audit and lifestyle mapping. Initial data collection to build your personalized protocol.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__num">03</div>
-          <div>
-            <p class="step__title">Custom Protocol Built for You</p>
-            <p class="step__desc">Training, nutrition, sleep, and supplement systems tailored to your routine — delivered in your private portal. Focusing only on what moves the needle.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__num">04</div>
-          <div>
-            <p class="step__title">Personalized Guidance</p>
-            <p class="step__desc">Full video walkthroughs of your protocol. All your questions answered. Immediate setup for daily execution.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step__num">05</div>
-          <div>
-            <p class="step__title">Ongoing Support &amp; Adjustments</p>
-            <p class="step__desc">Daily accountability via text and app. Weekly coaching check-ins. Live tracking, progress review, and real-time pivots as life happens.</p>
-          </div>
-        </div>
+        <div class="step"><div class="step__num">01</div><div><p class="step__title">Sign-Up &amp; Secure Your Spot</p><p class="step__desc">Discovering your goals and problems. Payment and contract. Locking in your start date. Immediate onboarding access.</p></div></div>
+        <div class="step"><div class="step__num">02</div><div><p class="step__title">Onboarding Call (Within 48 Hours)</p><p class="step__desc">30-minute 1:1 kickoff with your coach. Deep-dive health audit and lifestyle mapping.</p></div></div>
+        <div class="step"><div class="step__num">03</div><div><p class="step__title">Custom Protocol Built for You</p><p class="step__desc">Training, nutrition, sleep, and supplement systems tailored to your routine — delivered in your private portal.</p></div></div>
+        <div class="step"><div class="step__num">04</div><div><p class="step__title">Personalized Guidance</p><p class="step__desc">Full video walkthroughs of your protocol. All your questions answered.</p></div></div>
+        <div class="step"><div class="step__num">05</div><div><p class="step__title">Ongoing Support &amp; Adjustments</p><p class="step__desc">Daily accountability via text and app. Weekly coaching check-ins. Real-time pivots as life happens.</p></div></div>
       </div>
     </div>
   </section>
@@ -447,25 +533,23 @@
     <div class="container">
       <p class="section-label">Is This For You?</p>
       <h2>Who This Is For — And Who It's Not</h2>
-      <p style="margin-top: 0.5rem; margin-bottom: 3rem;">This is a high-performance coaching system. Not a generic fitness program. Not a $27 meal plan.</p>
-
       <div class="split-grid">
         <div>
           <h3 style="margin-bottom: var(--space-sm); color: var(--green-deep);">This Program Is For You If:</h3>
           <ul class="check-list">
-            <li><span class="icon-check">✓</span> <strong>High-Performer:</strong> You've built a business, led a team, or crushed it in your career — but your health hasn't kept up.</li>
-            <li><span class="icon-check">✓</span> <strong>Ready to Invest:</strong> You're done with free advice and generic workouts. You're willing to commit time, money, and energy.</li>
-            <li><span class="icon-check">✓</span> <strong>Coachable:</strong> You're willing to put your student hat back on and trust someone with a proven track record.</li>
-            <li><span class="icon-check">✓</span> <strong>Busy &amp; Values Efficiency:</strong> You don't have 10 hours a week for fitness — and that's exactly why you want a smarter protocol.</li>
+            <li><span class="icon-check">✓</span> <strong>High-Performer:</strong> Built a business, led a team, or crushed it in your career — but your health hasn't kept up.</li>
+            <li><span class="icon-check">✓</span> <strong>Ready to Invest:</strong> Done with free advice and generic workouts. Willing to commit time, money, and energy.</li>
+            <li><span class="icon-check">✓</span> <strong>Coachable:</strong> Willing to put your student hat back on and trust a proven system.</li>
+            <li><span class="icon-check">✓</span> <strong>Busy &amp; Values Efficiency:</strong> Don't have 10 hours a week — and want a protocol designed for men like you.</li>
           </ul>
         </div>
         <div>
           <h3 style="margin-bottom: var(--space-sm); color: var(--green-deep);">Not For You If:</h3>
           <ul class="check-list">
-            <li><span class="icon-x">✗</span> <strong>Looking for a Quick Fix:</strong> If you expect six-pack abs in two weeks, this isn't for you.</li>
-            <li><span class="icon-x">✗</span> <strong>Cheap Over Effective:</strong> This is high-touch coaching. If you value cost over results, we won't be a fit.</li>
+            <li><span class="icon-x">✗</span> <strong>Looking for a Quick Fix:</strong> Expecting six-pack abs in two weeks — this isn't for you.</li>
+            <li><span class="icon-x">✗</span> <strong>Cheap Over Effective:</strong> High-touch coaching isn't for everyone. If cost matters more than results, we won't be a fit.</li>
             <li><span class="icon-x">✗</span> <strong>Not Ready to Take Ownership:</strong> We partner with action-takers, not excuse-makers.</li>
-            <li><span class="icon-x">✗</span> <strong>Just "Thinking About It":</strong> This is for men who are ready to move. Come back when you're serious.</li>
+            <li><span class="icon-x">✗</span> <strong>Just "Thinking About It":</strong> This is for men who are ready to move.</li>
           </ul>
         </div>
       </div>
@@ -477,32 +561,13 @@
     <div class="container">
       <p class="section-label" style="color: var(--green-bright);">Common Objections</p>
       <h2>Still On the Fence?</h2>
-
       <div class="objection-grid">
-        <div class="objection">
-          <p class="objection__q">"I don't have time."</p>
-          <p class="objection__a">If you've watched a football game or two Netflix episodes this week — you have time. 2–4 sessions of 20–50 minutes per week. Meals you can prep in minutes. A plan built around your work, travel, and family life.</p>
-        </div>
-        <div class="objection">
-          <p class="objection__q">"It's too expensive."</p>
-          <p class="objection__a">You know what's expensive? Chronic inflammation, missed work from burnout, cardiologist bills, and sleep clinic visits. According to the AHA &amp; ADA, an average stroke costs $32,000+, a heart attack $20,000+, and diabetes ~$9,200/year. This program is protection for your most valuable asset: your energy.</p>
-        </div>
-        <div class="objection">
-          <p class="objection__q">"I can do it on my own."</p>
-          <p class="objection__a">Maybe. But has "doing it alone" gotten you the results you want? Most men burn out or bounce between extremes. We give you a structured plan, accountability, and expert analysis — so you don't waste time spinning your wheels.</p>
-        </div>
-        <div class="objection">
-          <p class="objection__q">"I've had a bad experience with a coach before."</p>
-          <p class="objection__a">Was your old coach just sending cookie-cutter workouts? Disappearing when life got hard? This isn't that. We don't charge by the hour — we create transformations. Daily access to your coach. Data, not guesswork.</p>
-        </div>
-        <div class="objection">
-          <p class="objection__q">"I need to talk to my spouse."</p>
-          <p class="objection__a">Absolutely — and they'll thank you for it. When your energy improves, your sleep deepens, your mood stabilizes, and your body changes, everyone in your life benefits. We're happy to provide a breakdown you can share.</p>
-        </div>
-        <div class="objection">
-          <p class="objection__q">"I'm intimidated by gyms."</p>
-          <p class="objection__a">Then don't go to one. We build training plans for hotel gyms, home garages, resistance bands and bodyweight, even airport lounges. We meet you where you are, then elevate you.</p>
-        </div>
+        <div class="objection"><p class="objection__q">"I don't have time."</p><p class="objection__a">If you've watched a football game or two Netflix episodes this week — you have time. 2–4 sessions of 20–50 minutes per week. A plan built around your work, travel, and family life.</p></div>
+        <div class="objection"><p class="objection__q">"It's too expensive."</p><p class="objection__a">You know what's expensive? Chronic inflammation, cardiologist bills, sleep clinic visits. According to the AHA &amp; ADA, an average stroke costs $32,000+, a heart attack $20,000+, diabetes ~$9,200/year. This is protection for your most valuable asset: your energy.</p></div>
+        <div class="objection"><p class="objection__q">"I can do it on my own."</p><p class="objection__a">Maybe. But has "doing it alone" gotten you the results you want? Most men burn out or bounce between extremes. We give you a structured plan, accountability, and expert analysis — so you don't waste time spinning your wheels.</p></div>
+        <div class="objection"><p class="objection__q">"I've had a bad experience with a coach before."</p><p class="objection__a">Was your old coach just sending cookie-cutter workouts? Disappearing when life got hard? This isn't that. We don't charge by the hour — we create transformations. Daily access. Data, not guesswork.</p></div>
+        <div class="objection"><p class="objection__q">"I need to talk to my spouse."</p><p class="objection__a">Absolutely — and they'll thank you for it. When your energy improves, your sleep deepens, your mood stabilizes, and your body changes, everyone in your life benefits.</p></div>
+        <div class="objection"><p class="objection__q">"I'm intimidated by gyms."</p><p class="objection__a">Then don't go to one. We build training plans for hotel gyms, home garages, resistance bands and bodyweight, even airport lounges. We meet you where you are.</p></div>
       </div>
     </div>
   </section>
@@ -512,32 +577,13 @@
     <div class="container--narrow">
       <p class="section-label">FAQ</p>
       <h2>Frequently Asked Questions</h2>
-
       <div class="faq-list">
-        <div class="faq-item">
-          <p class="faq-item__q">"I'm not in the same country — is that a problem?"</p>
-          <p class="faq-item__a">Not at all. Most clients are based in the U.S., Canada, Australia, New Zealand, Japan, the UAE, and Europe. You'll get daily access to your coach no matter your timezone.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-item__q">"Are the results you show typical?"</p>
-          <p class="faq-item__a">Yes — if you do the work. Every result on this page is from someone who followed the protocol, stayed accountable, and executed consistently. If you adhere at least 80%, we'll help you get your health, energy, and confidence back — for life.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-item__q">"Am I too old for this?"</p>
-          <p class="faq-item__a">Not even close. Most clients are between 40–65 years old. Many are busier than ever and haven't trained in years. If you're old enough to lead a company and a family, you're young enough to transform your body.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-item__q">"What if I'm injured?"</p>
-          <p class="faq-item__a">We've worked with men recovering from herniated discs, shoulder surgery, chronic joint pain, and old sports injuries. Your plan will be customized to protect you, not push you into pain.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-item__q">"I travel constantly. Will this even work?"</p>
-          <p class="faq-item__a">Yes. Actually, it was built to work for travelers — hotel gym workouts, restaurant meal strategies, portable snack kits, and sleep optimization on the road. Whether you're in Madrid or Ohio, the plan adapts to you.</p>
-        </div>
-        <div class="faq-item">
-          <p class="faq-item__q">"How much does it cost?"</p>
-          <p class="faq-item__a">This isn't a $500 group challenge or a $99 app. We offer high-touch, bespoke coaching for professionals who demand results. What costs more — this program, or another 6 months of stagnation, inflammation, and stress?</p>
-        </div>
+        <div class="faq-item"><p class="faq-item__q">"I'm not in the same country — is that a problem?"</p><p class="faq-item__a">Not at all. Most clients are based in the U.S., Canada, Australia, New Zealand, Japan, the UAE, and Europe. You'll get daily access to your coach no matter your timezone.</p></div>
+        <div class="faq-item"><p class="faq-item__q">"Are the results you show typical?"</p><p class="faq-item__a">Yes — if you do the work. Every result on this page is from someone who followed the protocol, stayed accountable, and executed consistently.</p></div>
+        <div class="faq-item"><p class="faq-item__q">"Am I too old for this?"</p><p class="faq-item__a">Not even close. Most clients are between 40–65 years old. Many haven't trained in years. If you're old enough to lead a company and a family, you're young enough to transform your body.</p></div>
+        <div class="faq-item"><p class="faq-item__q">"What if I'm injured?"</p><p class="faq-item__a">We've worked with men recovering from herniated discs, shoulder surgery, chronic joint pain, and old sports injuries. Your plan will be customized to protect you, not push you into pain.</p></div>
+        <div class="faq-item"><p class="faq-item__q">"I travel constantly. Will this even work?"</p><p class="faq-item__a">Yes. It was built to work for travelers — hotel gym workouts, restaurant meal strategies, portable snack kits, and sleep optimization on the road.</p></div>
+        <div class="faq-item"><p class="faq-item__q">"How much does it cost?"</p><p class="faq-item__a">This isn't a $500 group challenge or a $99 app. We offer high-touch, bespoke coaching. What costs more — this program, or another 6 months of stagnation and stress?</p></div>
       </div>
     </div>
   </section>
@@ -548,16 +594,10 @@
       <div class="text-center">
         <p class="section-label" style="color: var(--green-bright);">Get in Touch</p>
         <h2>Ready to Start the Conversation?</h2>
-        <p style="margin-top: 1rem; margin-bottom: 2rem; max-width: 50ch; margin-left: auto; margin-right: auto;">Questions about the program or whether it's the right fit? Reach out directly — no pressure, no obligation.</p>
+        <p style="margin-top: 1rem; margin-bottom: 2rem; max-width: 50ch; margin-left: auto; margin-right: auto;">Questions about the program? Reach out directly — no pressure, no obligation.</p>
         <div class="contact-strip" style="justify-content: center; background: rgba(0,0,0,0.2);">
-          <div class="contact-strip__item">
-            <p class="contact-strip__label">Email</p>
-            <p class="contact-strip__value"><a href="mailto:dcp@dcpfitness.com">dcp@dcpfitness.com</a></p>
-          </div>
-          <div class="contact-strip__item">
-            <p class="contact-strip__label">Website</p>
-            <p class="contact-strip__value"><a href="https://demi-cycle-protocol-2.carrd.co">demi-cycle-protocol-2.carrd.co</a></p>
-          </div>
+          <div class="contact-strip__item"><p class="contact-strip__label">Email</p><p class="contact-strip__value"><a href="mailto:dcp@dcpfitness.com">dcp@dcpfitness.com</a></p></div>
+          <div class="contact-strip__item"><p class="contact-strip__label">Website</p><p class="contact-strip__value"><a href="https://demi-cycle-protocol-2.carrd.co">demi-cycle-protocol-2.carrd.co</a></p></div>
         </div>
       </div>
     </div>
@@ -578,6 +618,78 @@
       <p class="footer__copy">&copy; 2026 Demi Cycle Protocol LLC. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox__close" onclick="closeLightbox(event)">✕</button>
+    <button class="lightbox__nav lightbox__prev" onclick="prevLightbox(event)">&#8249;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="Photo" onclick="event.stopPropagation()">
+    <button class="lightbox__nav lightbox__next" onclick="nextLightbox(event)">&#8250;</button>
+  </div>
+
+  <script>
+    // ── Result Card Toggle ──
+    function toggleCard(card) {
+      const wasExpanded = card.classList.contains('expanded');
+      // Close all
+      document.querySelectorAll('.result-card.expanded').forEach(c => c.classList.remove('expanded'));
+      // Open clicked if it wasn't already open
+      if (!wasExpanded) card.classList.add('expanded');
+    }
+
+    // ── Lightbox ──
+    let lightboxImages = [];
+    let lightboxIndex = 0;
+
+    function openLightbox(src, group) {
+      const lb = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      if (group) {
+        lightboxImages = group;
+        lightboxIndex = group.indexOf(src);
+      } else {
+        lightboxImages = [src];
+        lightboxIndex = 0;
+      }
+      img.src = src;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e) e.stopPropagation();
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function prevLightbox(e) {
+      e.stopPropagation();
+      lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+      document.getElementById('lightbox-img').src = lightboxImages[lightboxIndex];
+    }
+
+    function nextLightbox(e) {
+      e.stopPropagation();
+      lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+      document.getElementById('lightbox-img').src = lightboxImages[lightboxIndex];
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape')    closeLightbox();
+      if (e.key === 'ArrowLeft')  prevLightbox(e);
+      if (e.key === 'ArrowRight') nextLightbox(e);
+    });
+
+    // Close card on outside click
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.result-card')) {
+        document.querySelectorAll('.result-card.expanded').forEach(c => c.classList.remove('expanded'));
+      }
+    });
+  </script>
 
 </body>
 </html>

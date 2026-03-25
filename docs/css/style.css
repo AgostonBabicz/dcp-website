@@ -139,8 +139,6 @@ p   { color: var(--text-muted); max-width: 68ch; }
   100% { background-position: 60px 60px; }
 }
 
-.hero__overlay { display: none; }
-.hero__video-bg { display: none; }
 .hero__content { position: relative; z-index: 2; max-width: 720px; }
 .hero__label {
   font-size: 0.8rem; font-weight: 700; letter-spacing: 0.18em;

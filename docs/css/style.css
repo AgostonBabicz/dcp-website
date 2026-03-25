@@ -252,6 +252,19 @@ p   { color: var(--text-muted); max-width: 68ch; }
 .detail-stat__num { font-size: 1.4rem; font-weight: 800; color: var(--green-bright); line-height: 1; }
 .detail-stat__label { font-size: 0.75rem; color: rgba(255,255,255,0.7); margin-top: 4px; }
 
+/* ── Video Showcase ── */
+.video-showcase {
+  position: relative; margin-top: var(--space-lg);
+  border-radius: var(--radius); overflow: hidden;
+  background: var(--black); box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+}
+.video-showcase video {
+  width: 100%; display: block; max-height: 560px; object-fit: cover;
+}
+.video-showcase--dark {
+  background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);
+}
+
 /* ── Gallery Section ── */
 .gallery-section { background: var(--dark); padding: var(--space-xl) 0; }
 .gallery-section h2, .gallery-section p { color: var(--white); }

@@ -557,6 +557,34 @@ tr:nth-child(odd)  td { background: var(--white); }
 .footer__links { display: flex; gap: var(--space-md); list-style: none; }
 .footer__links a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
 .footer__links a:hover { color: var(--white); }
+.footer__contact {
+  width: 100%;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+}
+.footer__contact h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--green-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-sm);
+}
+.footer__contact p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  max-width: none;
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+.footer__contact a { color: rgba(255,255,255,0.8); text-decoration: none; }
+.footer__contact a:hover { color: var(--green-bright); text-decoration: underline; }
 .footer__copy {
   width: 100%; font-size: 0.78rem; color: rgba(255,255,255,0.22);
   margin-top: var(--space-md); padding-top: var(--space-md);
